@@ -8,18 +8,18 @@ features of the data and how it relates to the fraudulent transactions as well a
 
 ## Data Sources
 The following data sources were used in preparing visualizations and models for this project:
-[!Data](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions)
+[Here!](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions)
 
 ## Table of Contents
-- [Rationale] (#rationale)
-- [Extract] (#extract)
-- [Transform] (#transform)
-- [Load] (#load)
-- [Visualization Process] (#visualizaion process)
-- [Predictive Model Process] (#predictive model process)
-- [Metadata] (#metadata)
-- [Results] (#results)
-- [Credits] (#credits)
+- [Rationale](#rationale)
+- [Extract](#extract)
+- [Transform](#transform)
+- [Load](#load)
+- [Visualizations](#visualizations)
+- [Models](#models)
+- [Metadata](#metadata)
+- [Results](#results)
+- [Credits](#credits)
 </br>
 
 ## Rationale
@@ -36,7 +36,7 @@ Transformations needed for this data ranged depending on the processes being per
 ### Visualization Transformations
 Placeholder text for transformations needed for visualizations (custom codes in tableau, python, etc)
 
-### Predictive Model Transformations
+### Models
 Placeholder text for transformations needed for model creations (buckets needed, columns dropped, etc)
 
 
@@ -51,7 +51,7 @@ Placeholder for Tensorflow data load
 
 
 
-## Visualization Process
+## Visualizations
 placeholder for Two processes here, Tableau and Python.
 ### Tableau
 placeholder for steps taken and dashboards/viz's made here!
