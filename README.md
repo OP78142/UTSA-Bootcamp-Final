@@ -11,15 +11,15 @@ The following data sources were used in preparing visualizations and models for 
 [!Data](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions)
 
 ## Table of Contents
-- [Rationale](# rationale)
-- [Extract](# extract)
-- [Transform](# transform)
-- [Load](# load)
-- [Visualization Process](# visualizaion process)
-- [Predictive Model Process](# predictive model process)
-- [Metadata](# metadata)
-- [Results](# results)
-- [Credits](# credits)
+- [Rationale] (# rationale)
+- [Extract] (# extract)
+- [Transform] (# transform)
+- [Load] (# load)
+- [Visualization Process] (# visualizaion process)
+- [Predictive Model Process] (# predictive model process)
+- [Metadata] (# metadata)
+- [Results] (# results)
+- [Credits] (# credits)
 </br>
 
 ## Rationale
