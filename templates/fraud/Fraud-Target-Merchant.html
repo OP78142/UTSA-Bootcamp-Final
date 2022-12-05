@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Credit Card Fraud</title>
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        />
+        
+
+        <!-- CSS style sheet associated to this project -->
+        <link rel="stylesheet" type="text/css" href="../style.css">
+    </head>
+      
+    <body style="background-color:rgba(214, 186, 149, 0.781);text-align:center">
+        <!-- Add Jumbotron to Header -->
+        <div class="jumbotron text-center" style="background-image: url('../../images/card.PNG'); background-position: center; background-size: cover;height:130px">
+        
+            <div class ="container">
+                <h1 style="color:black; text-align: justify;">Credit Card Fraud</h1>
+            </div>
+         
+        </div>
+      
+        <nav class="navbar navbar-light" style="background-color:white; position: relative; z-index: 1;">
+              <a class="navbar-brand" href="../../Index.html">Home</a>
+              <a class="navbar-brand" href="../Fraud.html"> Fraud</a>
+                <a class="navbar-brand" href="../Map.html">Map</a> 
+              <a class="navbar-brand" href="../Model.html">Model</a>      
+                   
+        </nav>
+
+
+        <div class="container"style="background-color: rgb(177, 175, 215)">
+         <div class="row">
+            <h3><strong> Fraudulent Transaction Assessment</strong></h3> <hr>
+            <div class = "col-4">
+            <!-- The sidebar -->
+                <div class="sidebar">
+                    <a href="../../index.html">Home</a>
+                    <a href="../Fraud.html">Fraud - Home</a>
+                    <a href="Fraud-Card-Access.html">Card Access</a>
+                    <a class="active" href="Fraud-Target-Merchant.html">Targeted Merchants</a>
+                    <a  href="Fraud-by-Age.html">Based on User Age</a>
+                    <a href="Fraud-about-Card.html"> Based on the Card</a>
+                    <a href="Fraud-by-Location.html">Top 5 Location of Fraud</a>
+
+                </div>
+            </div>
+
+            <div class = "col-8">
+                <!-- Page content -->
+                <div class="content">
+                    <h4 style="text-align: left;">Fraudulent Transaction by Merchant Category Code</h4>
+                    
+                    <!-- Card Group -->
+                    <div class = "card-group">
+                        <!-- FIRST CARD -->
+                        <div class="card">
+                            <a target="_blank" href="../../images/fraud_MCC.png"> 
+                            <img class="card-img-top" src="../../images/fraud_MCC.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                            <h5 class="card-title"><strong> Popular Merchant Category</strong></h5>
+                            <p class="card-text" style="text-align: left;">Based on manual search, the MCC for the top 10 Fraudulent Transactions are as follows:
+                                <ul style="text-align: left;">
+
+                                <li>5311 - Department Stores</li>
+                                <li>5300 - Wholesale Clubs</li>
+                                <li>5310 - Discount Stores</li>
+                                <li>4829 - Wire Transfer Money Orders, Money Transfer</li>
+                                <li>5912 - Drug Stores and Pharmacies</li>
+                                <li>5411 - Grocery Stores, Supermarkets</li>
+                                <li>5815 - Digital Goods: Books, Movies, Music</li>
+                                <li>5651 - Family Clothing Stores</li>
+                                <li>5732 - Electronics Sales</li>
+                                <li>5719 - Miscellaneous House Furnishing Specialty Shops</li>
+                            </ul>
+                            </p>
+                            
+                            </div>
+                        </div>
+                        <!-- SECOND CARD -->
+                        <div class="card">
+                            <a target="_blank" href="../../images/fraud_MCC_low.png"> 
+                            <img class="card-img-top" src="../../images/fraud_MCC_low.png" alt="Card image cap"> </a>
+                            <div class="card-body">
+                            <h5 class="card-title"><strong>Least Popular Merchant Category</strong></h5>
+                            <p class="card-text" style="text-align: left;">Based on manual search, the MCC for the bottom 10 Less Fraudulent Transactions are as follows:
+                                <ul style="text-align: left;">
+
+                                <li>8049 - Podiatrists and Chiropodists</li>
+                                <li>8041 - Chiropractors</li>
+                                <li>7531 - Automotive Body Repair Shops</li>
+                                <li>7230 - Barber and Beauty Shops</li>
+                                <li>7802 - Government Licensed Horse/Dog Racing</li>
+                                <li>7549 - Towing Services</li>
+                                <li>7349 - Cleaning and Maintenance, Janitorial Services</li>
+                                <li>8011 - Doctors and Physicians (Not Elsewhere Classified)</li>
+                                <li>5722 - Household Appliance Stores</li>
+                                <li>8099 - Medical Services and Health Practitioners (Not Elsewhere Classified)</li>
+                                </ul>
+                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                                           
+                    
+                </div>
+            </div>
+         
+
+        </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+
+
+</html>
