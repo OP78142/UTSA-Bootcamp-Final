@@ -34,33 +34,44 @@ The data is a set of three comma-separated value files (*.csv files) containing 
 ## Transform
 Transformations needed for this data ranged depending on the processes being performed.
 ### Visualization Transformations
-Placeholder text for transformations needed for visualizations (custom codes in tableau, python, etc)
+For tableau visualizations, data was cleaned and filtered to return only the locations as well as focus on only fraudulent transactions to present a heat map of where frauds have occurred. The intent is to investigate the locations of fraudulent transactions to find possible trends in the data.
+
+For the exploration of data in general- the focus remained on fraudulent transactions only. The dataset was over 24 million rows, the need to filter the data in a way to provide data visualizations on the most impactful sections of data. For that, the data was set to investigate only the fraudulent transactions.
+
+Utilized the Card types, Transaction types, locations, merchant codes, as well as card holder age-groups were leveraged to provide data visualizations. 
 
 ### Models
-Placeholder text for transformations needed for model creations (buckets needed, columns dropped, etc)
+The data for creation of models needed several columns cleaned, grouped, and transformed. The `Year`,`Month`,`Day`,`Time` columns needed merged and transformed into UTC format for use in Tensorflow. The `Amount` column was grouped into semi-equal occurrences of amount ranges. For example, if $200-$300 is seen 2 million times, where 300-600 through 9,000-12,000 amounts combined were seen 2 million times, groups would be $200-300,and $301-12,000, etc. Some columns were deemed unnecessary for predictive modeling. The columns `Merchant Name`,`Merchant City`,`Merchant State`,`Zip` would have added too much noise to the model- having 24 million rows of data across a multitude of merchants, and locations. The column `Card Number` was also not necessary, there were millions of individual card numbers that would have added noise to the model. These numbers are only simulated data, meaning any correlation found would have convoluted results instead of clarifying.
+
+
 
 
 ## Load
-Data is loaded into various applications to be processed.
+Data was pulled from [This Site!](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions). It was loaded directly into google colaboratory and jupyter notebooks. No intermediary database was needed. 
 ### Tableau Load
-Placeholder for Tableau data load details/process
-### Jupyter Notebook Load
-Placeholder for Jupyter notebook load details/process
+Data was filtered in tableau to produce only fraudulent transactions, saved to a file, and uploaded into tableau public. Heat maps were created from the filtered data to display areas sufferring from the higher levels of fraudulent activities.
+### Jupyter Notebook and Google Colaboratory Load
+Jupyter Notebooks and Google Colaboratory were used to do all data transformations and loads. They can be found [Here](https://github.com/OP78142/UTSA-Bootcamp-Final)
 ### Model Load details and process
-Placeholder for Tensorflow data load
+Placeholder for type of model being run, layers, and percentages here
 
 
 
 ## Visualizations
-placeholder for Two processes here, Tableau and Python.
+Visualizations were created using Python and Tableau Public. 
 ### Tableau
-placeholder for steps taken and dashboards/viz's made here!
-### Jupyter Notebook
-placeholder for steps taken and viz's made here!
+Tableau was leveraged to create an interactive dashboard to determine where the higher levels of fraud were occurring. They can be found at the following locations [1990-2000](https://public.tableau.com/views/CreditCardFraudMap1990-2000/CreditCardFraudMap1990-2000?:language=en-US&:display_count=n&:origin=viz_share_link), [2001-2010](https://public.tableau.com/views/CreditCardFraudMap2001-2010/CreditCardFraudMap2001-2010?:language=en-US&:display_count=n&:origin=viz_share_link), and [2011-2020](https://public.tableau.com/views/CreditCardFraudMap2011-2020/CreditCardFraudMap2011-2020?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).</br>
 
 
+### Python using Jupyter Notebook
+The steps taken to investigate the dataset can be found [Here](https://github.com/OP78142/UTSA-Bootcamp-Final)
+
+The various charts created to find interesting trends in the data are displayed in several places. [Transactions](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-Card-Access.html) displays the mechanical procedure for accessing funds. Was a chip used? was it a swipe? did it occur online- thus needing neither?
+[Merchants](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-Target-Merchant.html) displays the merchants affected and how often these merchants were given fraudulent card information as payment.
+[Ages](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-by-Age.html) displays age groups for cardholders, as well as the count of fraudulent transactions and debt levels for these cardholders.
 ## Predictive Model Process
 placeholder for steps taken for predictive model process here!
+[Cards](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-about-Card.html) displays data about the cards. How many fraudulent transactions were debit or credit, as well as which card provider was most vulnerable to fraudulent transactions- Visa, Mastercard, etc.</br>
 
 
 ## Metadata
@@ -123,7 +134,7 @@ placeholder for steps taken for predictive model process here!
 |Is Fraud?                |Is the transaction fraudulent? Yes/No    |String Y/N         |</br>
 
 ## Results
-placeholder for results here!
+Placeholder for results here!
 
 
 
