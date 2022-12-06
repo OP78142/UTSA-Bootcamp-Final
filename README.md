@@ -23,7 +23,7 @@ The following data sources were used in preparing visualizations and models for 
 </br>
 
 ## Rationale
-Credit and Debit card frauds are a growing problem worldwide. As we reach the holiday season, millions of dollars will be fraudulently spent using Credit and Debit cards. In this project, we will attempt to find an efficient model to predict fraud in card transactions. We will also quantify the fraud crisis in an attempt to raise awareness of the trends occurring within this crisis. Target Audience: Banking industry. </br></br>
+Credit and Debit card frauds are a growing problem worldwide. As we reach the holiday season, billions of dollars will be fraudulently spent using Credit and Debit cards. In this project, we will attempt to find an efficient model to predict fraud in card transactions. We will also quantify the fraud crisis in an attempt to raise awareness of the trends occurring within this crisis. Target Audience: Banking industry. </br></br>
 ## Extract
 Extraction is being done via an existing historical dataset found [Here](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions).
 Should a banking industry decide to utilize the model, connecting to the banking data via odbc, jdbc, flat files, or even AWS RDS could easily be implemented. At the time of this project, direct access to bank records was not available. The act of accessing credit card information to predict credit card information is the equivalent of stealing the credit card information. To prevent legal issues, the transactions used are generated from a multi-agent virtual world simulation performed by IBM to simulate real-world data. </br>
@@ -34,11 +34,11 @@ The data is a set of three comma-separated value files (*.csv files) containing 
 ## Transform
 Transformations needed for this data ranged depending on the processes being performed.
 ### Visualization Transformations
-For tableau visualizations, data was cleaned and filtered to return only the locations as well as focus on only fraudulent transactions to present a heat map of where frauds have occurred. The intent is to investigate the locations of fraudulent transactions to find possible trends in the data.
+For tableau visualizations, data was cleaned and filtered to return only the locations as well as focus on only fraudulent transactions to present a heat map of fraud locations. The intent is to investigate the locations of fraudulent transactions to find possible trends in the data.
 
-For the exploration of data in general- the focus remained on fraudulent transactions only. The dataset was over 24 million rows, the need to filter the data in a way to provide data visualizations on the most impactful sections of data. For that, the data was set to investigate only the fraudulent transactions.
+For the exploration of data in general- the focus remained on fraudulent transactions only. The dataset was over 24 million rows, a filter for the data in a way to provide data visualizations on the most impactful sections of data was needed. For that, the data was set to investigate only the fraudulent transactions.
 
-Utilized the Card types, Transaction types, locations, merchant codes, as well as card holder age-groups were leveraged to provide data visualizations. 
+The Card types, Transaction types, locations, merchant codes, as well as card holder age-groups were leveraged to provide data visualizations. 
 
 ### Models
 The data for creation of models needed several columns cleaned, grouped, and transformed. The `Year`,`Month`,`Day`,`Time` columns needed merged and transformed into UTC format for use in Tensorflow. The `Amount` column was grouped into semi-equal occurrences of amount ranges. For example, if $200-$300 is seen 2 million times, where 300-600 through 9,000-12,000 amounts combined were seen 2 million times, groups would be $200-300,and $301-12,000, etc. Some columns were deemed unnecessary for predictive modeling. The columns `Merchant Name`,`Merchant City`,`Merchant State`,`Zip` would have added too much noise to the model- having 24 million rows of data across a multitude of merchants, and locations. The column `Card Number` was also not necessary, there were millions of individual card numbers that would have added noise to the model. These numbers are only simulated data, meaning any correlation found would have convoluted results instead of clarifying.</br></br>
@@ -71,14 +71,14 @@ The various charts created to find interesting trends in the data are displayed 
 <img src="images/fraud_MCC.png"></br>
 
 [Ages](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-by-Age.html) displays age groups for cardholders, as well as the count of fraudulent transactions and debt levels for these cardholders.</br>
-<img src="images/fraud_age_income_debt_credit.png"</br>
+<img src="images/fraud_age_income_debt_credit.png"></br>
 
 
-## Predictive Model Process
-placeholder for steps taken for predictive model process here!
+
 [Cards](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-about-Card.html) displays data about the cards. How many fraudulent transactions were debit or credit, as well as which card provider was most vulnerable to fraudulent transactions- Visa, Mastercard, etc.</br>
 <img src="images/pie_card_brand.png"></br>
-
+## Predictive Model Process
+placeholder for steps taken for predictive model process here!
 
 ## Metadata
 ### Table Name: sd254_cards.csv</br>
