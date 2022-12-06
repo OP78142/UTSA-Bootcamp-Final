@@ -61,7 +61,7 @@ Placeholder for type of model being run, layers, and percentages here</br></br>
 Visualizations were created using Python and Tableau Public. 
 ### Tableau
 Tableau was leveraged to create an interactive dashboard to determine where the higher levels of fraud were occurring. They can be found at the following locations [1990-2000](https://public.tableau.com/views/CreditCardFraudMap1990-2000/CreditCardFraudMap1990-2000?:language=en-US&:display_count=n&:origin=viz_share_link), [2001-2010](https://public.tableau.com/views/CreditCardFraudMap2001-2010/CreditCardFraudMap2001-2010?:language=en-US&:display_count=n&:origin=viz_share_link), and [2011-2020](https://public.tableau.com/views/CreditCardFraudMap2011-2020/CreditCardFraudMap2011-2020?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).</br>
-<img src="images/TableauDashboard.PNG"
+<img src="images/TableauDashboard.PNG"></br>
 
 ### Python using Jupyter Notebook
 The steps taken to investigate the dataset can be found [Here](https://github.com/OP78142/UTSA-Bootcamp-Final/blob/main/Credit%20Card%20Data%20Analysis.ipynb)
