@@ -8,7 +8,7 @@ features of the data and how it relates to the fraudulent transactions as well a
 
 ## Data Sources
 The following data sources were used in preparing visualizations and models for this project:
-[Here!](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions)
+[Here!](https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions). (Disclaimer: File is more than 25MB and not allowed in GitHub)
 
 ## Table of Contents
 - [Rationale](#rationale)
