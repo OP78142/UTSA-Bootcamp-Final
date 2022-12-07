@@ -141,13 +141,14 @@ Our data predictions were handled through the use of T-SNE analysis and Tensor F
 |Is Fraud?                |Is the transaction fraudulent? Yes/No    |String Y/N         |</br>
 
 ## Results
-Placeholder for results here!</br></br>
+We were able to achieve a 99% accuracy rate on our Credit Card Fraud Detection model. We noticed that fraudulent transactions were more likely to occur online. There was a spike between the years 2000 and 2010. For the years 2011 to 2019 there was a decrease of in-person credit card fraud.
+</br></br>
 
 
 
 ## Credits
 The collaborators on this project are: 
-Aaron Devore https://github.com/OP78142,
+Aaron DeVore https://github.com/OP78142,
 Waynette Burke https://github.com/WayBurke,
 Ariana Garcia https://github.com/arianajoslyn, and
 Jessica Ermovick https://github.com/Jermov </br>
