@@ -54,7 +54,7 @@ Data was filtered in tableau to produce only fraudulent transactions, saved to a
 ### Jupyter Notebook and Google Colaboratory Load
 Jupyter Notebooks and Google Colaboratory were used to do all data transformations and loads. The data exploration code can be found [Here](https://github.com/OP78142/UTSA-Bootcamp-Final/blob/main/Credit%20Card%20Data%20Analysis.ipynb)
 ### Model Load details and process
-Placeholder for type of model being run, layers, and percentages here</br></br>
+The model data was reviewed and updated using Tesnor Flow analysis with a 99% accuracy rate and T-SNE algorithym review which presented our final data as scatter and bar plots.  The source data for this analysis can be pulled from the resource data link.  The overall data was too large to upload to Github.</br></br>
 
 
 
@@ -79,7 +79,7 @@ The various charts created to find interesting trends in the data are displayed 
 [Cards](https://op78142.github.io/UTSA-Bootcamp-Final/templates/Fraud-about-Card.html) displays data about the cards. How many fraudulent transactions were debit or credit, as well as which card provider was most vulnerable to fraudulent transactions- Visa, Mastercard, etc.</br>
 <img src="images/pie_card_brand.png"></br>
 ## Predictive Model Process
-placeholder for steps taken for predictive model process here!
+Our data predictions were handled through the use of T-SNE analysis and Tensor Flow analysis giving a 99% accuracy rate.
 
 ## Metadata
 ### Table Name: sd254_cards.csv</br>
