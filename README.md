@@ -4,7 +4,7 @@
 In this project, the Team is attempting to analyze credit card transactions to 
 determine predictability of catching fraudulent transactions with greater expediency
 than current methods. We will visualize the data to see interesting trends in various 
-features of the data and how it relates to the fraudulent transactions as well as attempt to create a predictive model that sufficiently predicts a fraudulent transaction. </br>
+features of the data and how it relates to the fraudulent transactions as well as attempt to create a predictive model that sufficiently predicts a fraudulent transaction. The site is hosted using gitub and can be found [Here!](https://OP78142.github.io/UTSA-Bootcamp-Final/) </br>
 
 ## Data Sources
 The following data sources were used in preparing visualizations and models for this project:
